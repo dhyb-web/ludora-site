@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Ludora - Devlog, roadmap et annonces</title>
+    <meta
+      name="description"
+      content="Devlog Ludora, annonces de mises a jour, football, Supabase, tournois et roadmap."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles/ludora-site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="index.html"><img src="assets/ludora-icon.png" alt="" /><span>Ludora</span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Menu">Menu</button>
+        <div class="nav-links" data-nav-links>
+          <a href="index.html">Accueil</a>
+          <a href="index.html#jeux">Jeux</a>
+          <a href="index.html#football">Football</a>
+          <a href="blog.html" aria-current="page">Blog</a>
+          <a href="support.html">Support</a>
+          <a class="button" href="support.html#installation">Telecharger</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blog-hero">
+        <div class="page-title">
+          <div class="section-kicker">Devlog officiel</div>
+          <h1>Blog Ludora</h1>
+          <p>
+            Le journal de bord pour suivre les ajouts de jeux, les modules actifs, le backend Supabase, Ludora Football et les futures saisons.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="filter-row" aria-label="Filtres blog">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter-button" type="button" data-filter="devlog" aria-pressed="false">Devlog</button>
+          <button class="filter-button" type="button" data-filter="football" aria-pressed="false">Football</button>
+          <button class="filter-button" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+          <button class="filter-button" type="button" data-filter="roadmap" aria-pressed="false">Roadmap</button>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="post-card" id="modules-devlog" data-post-category="devlog">
+            <div class="post-meta"><span>Devlog</span><span>31 mai 2026</span></div>
+            <h3>Les modules avances deviennent vraiment actifs.</h3>
+            <div class="article-body">
+              <p>
+                La plateforme ne se contente plus d'afficher un message quand un module est lance. Chaque action sociale, gaming, monetisation, securite, IA, technique, live ou UI cree maintenant une activite visible.
+              </p>
+              <h3>Ce qui change</h3>
+              <p>
+                Ludora sauvegarde les actions localement, ajoute XP et LudoCoins quand le module le permet, garde un historique par section, puis tente une synchronisation Supabase via <code>ludora_module_states</code>.
+              </p>
+              <h3>Impact joueur</h3>
+              <p>
+                Quand tu lances une invitation, une mission, un coffre, un scan anti-triche ou un test IA, tu vois l'activite du module directement dans l'interface.
+              </p>
+            </div>
+          </article>
+
+          <article class="post-card" id="football-devlog" data-post-category="football">
+            <div class="post-meta"><span>Football</span><span>MVP</span></div>
+            <h3>Ludora Football : une seule interface, plusieurs modes dedans.</h3>
+            <div class="article-body">
+              <p>
+                Le jeu football sert de vitrine sportive a Ludora. L'objectif n'est pas encore de remplacer Unity, mais de construire un MVP mobile clair, jouable et extensible.
+              </p>
+              <h3>Actif maintenant</h3>
+              <p>
+                Le match contient une vue 2D tactique, une vue 3D stylisee, le changement de joueur, les tirs, passes, dribbles, pressing, fautes simples, corners, coups francs, meteo, mini-carte et tournoi.
+              </p>
+              <h3>Prochain objectif</h3>
+              <p>
+                Le prochain palier consiste a connecter les invitations amis au mode match, creer des salons football, puis synchroniser les statistiques de match.
+              </p>
+            </div>
+          </article>
+
+          <article class="post-card" data-post-category="backend">
+            <div class="post-meta"><span>Backend</span><span>Supabase</span></div>
+            <h3>Pourquoi le SQL doit etre relance apres les nouveaux modules.</h3>
+            <div class="article-body">
+              <p>
+                Quand Ludora gagne une nouvelle table ou une nouvelle policy RLS, Supabase ne peut pas la deviner. Le script SQL complet met a jour la base sans effacer les donnees existantes.
+              </p>
+              <h3>Tables importantes</h3>
+              <p>
+                <code>ludora_players</code>, <code>ludora_scores</code>, <code>ludora_game_sessions</code>, <code>ludora_friendships</code>, <code>ludora_online_rooms</code>, <code>ludora_platform_events</code> et <code>ludora_module_states</code>.
+              </p>
+            </div>
+          </article>
+
+          <article class="post-card" id="roadmap" data-post-category="roadmap">
+            <div class="post-meta"><span>Roadmap</span><span>Produit</span></div>
+            <h3>Le plan pour rendre Ludora plus vivant.</h3>
+            <div class="article-body">
+              <p>
+                La priorite court terme est de rendre les actions visibles, testables et synchronisables. Ensuite, les modes amis et tournois doivent devenir le centre de l'experience.
+              </p>
+              <h3>Priorites</h3>
+              <p>
+                Compte email fiable, salons amis, jeux plus profonds, missions quotidiennes, saisons, store d'objets, classement mondial temps reel et dashboard web admin.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/ludora-icon.png" alt="" /><span>Ludora</span></a>
+          <p>Devlog, roadmap et support pour la plateforme Ludora.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="support.html">Support</a>
+          <a href="legal.html">Legal</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/ludora-site.js"></script>
+  </body>
+</html>

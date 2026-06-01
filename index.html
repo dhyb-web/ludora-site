@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ludora - Banque de jeux mobile</title>
+    <meta
+      name="description"
+      content="Ludora est une plateforme mobile de mini-jeux, scores, tournois, social gaming et Ludora Football."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles/ludora-site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="index.html" aria-label="Accueil Ludora">
+          <img src="assets/ludora-icon.png" alt="" />
+          <span>Ludora</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Menu">
+          Menu
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="#jeux">Jeux</a>
+          <a href="#football">Football</a>
+          <a href="blog.html">Blog</a>
+          <a href="support.html">Support</a>
+          <a class="button" href="support.html#installation">Telecharger</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="eyebrow">Plateforme mobile gaming</div>
+            <h1 id="hero-title">Ludora</h1>
+            <p>
+              Une banque de jeux premium pour jouer, progresser, defier tes amis et construire une vraie communaute autour de mini-jeux rapides et Ludora Football.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="support.html#installation">Telecharger l'APK</a>
+              <a class="ghost-button" href="#football">Voir Ludora Football</a>
+            </div>
+            <div class="hero-stats" aria-label="Statistiques Ludora">
+              <div class="stat"><strong>20+</strong><span>jeux et prototypes</span></div>
+              <div class="stat"><strong>2D/3D</strong><span>football tactique</span></div>
+              <div class="stat"><strong>Supabase</strong><span>scores et social</span></div>
+              <div class="stat"><strong>Offline</strong><span>sync intelligente</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="app">
+        <div class="feature-band">
+          <div>
+            <div class="section-kicker">Application principale</div>
+            <h2>Ludora regroupe jeux, profil, boutique et classement.</h2>
+            <p>
+              L'app Android combine compte Supabase, sauvegarde locale, classement mondial, succes, notifications, modules sociaux, boutique et centre tournoi.
+            </p>
+            <div class="inline-actions">
+              <a class="button" href="support.html#installation">Installer l'APK</a>
+              <a class="ghost-button" href="blog.html">Lire le devlog</a>
+            </div>
+          </div>
+          <div class="media-frame">
+            <img src="assets/ludora-home.png" alt="Capture de l'accueil Ludora" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="jeux">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Banque de jeux</div>
+            <h2>Un catalogue qui peut grandir sans casser l'app.</h2>
+            <p>
+              Chaque jeu est branche comme un module avec score, duree, recompenses, missions et synchronisation.
+            </p>
+          </div>
+          <a class="ghost-button" href="blog.html#roadmap">Roadmap</a>
+        </div>
+        <div class="grid grid-3">
+          <article class="game-card" data-tone="football">
+            <div class="card-icon">FB</div>
+            <div>
+              <h3>Ludora Football</h3>
+              <p>Match rapide 2D/3D, IA, passes, tirs, pressing, tactiques, tournoi et camera dynamique.</p>
+              <div class="chips">
+                <span class="chip">5v5</span><span class="chip">Tactique</span><span class="chip">Tournoi</span>
+              </div>
+            </div>
+          </article>
+          <article class="game-card" data-tone="arcade">
+            <div class="card-icon">AR</div>
+            <div>
+              <h3>Arcade & reflexes</h3>
+              <p>Snake Arena, Pong Duel, Tetris Blocks, Reflex Rush, Runner Dash et Space Shooter.</p>
+              <div class="chips">
+                <span class="chip">Rapide</span><span class="chip">Score</span><span class="chip">Combo</span>
+              </div>
+            </div>
+          </article>
+          <article class="game-card" data-tone="brain">
+            <div class="card-icon">ST</div>
+            <div>
+              <h3>Jeux strategie</h3>
+              <p>Echecs Duel, Ludo Rush, Awale Africain, Quiz Clash, Memory Quest et 2048 Neon.</p>
+              <div class="chips">
+                <span class="chip">IA</span><span class="chip">Solo</span><span class="chip">Local</span>
+              </div>
+            </div>
+          </article>
+          <article class="game-card" data-tone="racing">
+            <div class="card-icon">RC</div>
+            <div>
+              <h3>Racing</h3>
+              <p>Car racing, moto racing, nitro, drift, obstacles, reparations et progression arcade.</p>
+              <div class="chips">
+                <span class="chip">Nitro</span><span class="chip">Drift</span><span class="chip">Mobile</span>
+              </div>
+            </div>
+          </article>
+          <article class="game-card" data-tone="brain">
+            <div class="card-icon">ON</div>
+            <div>
+              <h3>Online & Supabase</h3>
+              <p>Invitations, salons Tic Tac Toe, joueurs connectes, classement global et file offline-first.</p>
+              <div class="chips">
+                <span class="chip">Amis</span><span class="chip">Realtime-ready</span>
+              </div>
+            </div>
+          </article>
+          <article class="game-card" data-tone="arcade">
+            <div class="card-icon">XP</div>
+            <div>
+              <h3>Modules avancees</h3>
+              <p>Missions quotidiennes, roue, coffres, VIP, skins, securite, IA, live et personnalisation.</p>
+              <div class="chips">
+                <span class="chip">Saisons</span><span class="chip">Boutique</span><span class="chip">IA</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="football">
+        <div class="feature-band">
+          <div>
+            <div class="section-kicker">Jeu phare</div>
+            <h2>Ludora Football devient l'experience vitrine.</h2>
+            <p>
+              Le MVP actuel pose une base jouable : terrain reduit, joystick, boutons action, tirs orientes, gardiens, fautes simples, tactiques, meteo, mini-carte, 2D et 3D.
+            </p>
+            <div class="chips">
+              <span class="chip">Standard</span>
+              <span class="chip">Pressing</span>
+              <span class="chip">Camera dynamique</span>
+              <span class="chip">Tournoi</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Prochain cran</h3>
+            <p>
+              Stabiliser le multijoueur amis, ajouter rooms football, synchroniser les matchs, puis preparer une passerelle Unity/Flutter pour un futur gameplay 3D plus lourd.
+            </p>
+            <a class="ghost-button" href="blog.html#football-devlog">Lire le plan football</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Roadmap</div>
+            <h2>Le plan produit Ludora.</h2>
+            <p>Un chemin simple : stabiliser, connecter, enrichir, publier.</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><strong>Maintenant</strong><p>Modules actifs, inscription email, SQL Supabase complet, site officiel et APK test.</p></div>
+          <div class="timeline-item"><strong>Version 1.3</strong><p>Salons amis plus visibles, historique social, missions quotidiennes et classement temps reel.</p></div>
+          <div class="timeline-item"><strong>Version 1.4</strong><p>Ludora Football online, invitations match, tournoi joueur et statistiques avancees.</p></div>
+          <div class="timeline-item"><strong>Version 2.0</strong><p>Backend scalable, plugins de jeux, analytics, boutique distante et preparation store.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="blog-preview">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Blog</div>
+            <h2>Devlog et annonces.</h2>
+            <p>Un espace pour montrer que Ludora avance vraiment, version apres version.</p>
+          </div>
+          <a class="ghost-button" href="blog.html">Tous les articles</a>
+        </div>
+        <div class="grid grid-3">
+          <article class="post-card">
+            <div class="post-meta"><span>Devlog</span><span>31 mai 2026</span></div>
+            <h3>Les modules avances passent du prototype a l'activite reelle.</h3>
+            <p>Chaque action cree maintenant un historique visible, une recompense et une synchronisation.</p>
+          </article>
+          <article class="post-card">
+            <div class="post-meta"><span>Football</span><span>Roadmap</span></div>
+            <h3>Ludora Football : 2D, 3D et futur multijoueur amis.</h3>
+            <p>Le jeu phare gagne une interface unique, des tactiques et un plan online progressif.</p>
+          </article>
+          <article class="post-card">
+            <div class="post-meta"><span>Support</span><span>Supabase</span></div>
+            <h3>Pourquoi relancer le SQL apres une mise a jour.</h3>
+            <p>Les nouvelles tables activent les modules, les scores, les salons et la synchronisation.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/ludora-icon.png" alt="" /><span>Ludora</span></a>
+          <p>Banque de jeux mobile, creee pour devenir une vraie plateforme sociale et rentable.</p>
+        </div>
+        <div class="footer-links">
+          <a href="blog.html">Blog</a>
+          <a href="support.html">Support</a>
+          <a href="legal.html">Legal</a>
+          <a href="support.html#installation">APK</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/ludora-site.js"></script>
+  </body>
+</html>

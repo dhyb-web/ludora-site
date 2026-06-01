@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support Ludora - Installation, Supabase et APK</title>
+    <meta
+      name="description"
+      content="Support Ludora pour installer l'APK, configurer Supabase, activer les modules et tester l'app."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles/ludora-site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="index.html"><img src="assets/ludora-icon.png" alt="" /><span>Ludora</span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Menu">Menu</button>
+        <div class="nav-links" data-nav-links>
+          <a href="index.html">Accueil</a>
+          <a href="index.html#jeux">Jeux</a>
+          <a href="blog.html">Blog</a>
+          <a href="support.html" aria-current="page">Support</a>
+          <a href="legal.html">Legal</a>
+          <a class="button" href="#installation">Telecharger</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-title">
+          <div class="section-kicker">Centre support</div>
+          <h1>Installer, connecter, tester.</h1>
+          <p>
+            Les points essentiels pour essayer Ludora sur Android, connecter Supabase et comprendre pourquoi certains modules restent en file locale tant que le SQL n'est pas a jour.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="installation">
+        <div class="grid grid-2">
+          <div class="panel">
+            <h2>APK de test</h2>
+            <p>
+              Le build Android release est pret dans le projet. Installe-le sur ton telephone pour tester les jeux et les modules.
+            </p>
+            <div class="inline-actions">
+              <a class="button" href="#apk-local">Voir le fichier local</a>
+              <a class="ghost-button" href="#publication">Publier le fichier plus tard</a>
+            </div>
+          </div>
+          <div class="panel">
+            <h2>Supabase</h2>
+            <p>
+              Le projet Supabase Ludora est integre par defaut dans l'app. Pour activer toutes les tables, relance le script complet.
+            </p>
+            <div class="code-line">docs/supabase_ludora_schema.sql</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="apk-local">
+        <div class="panel">
+          <h2>APK local pret</h2>
+          <p>
+            Pour eviter que Netlify ou le navigateur bloque le domaine public pendant les tests, l'APK n'est pas inclus dans cette version publique legere.
+          </p>
+          <div class="code-line">C:\Users\LENOVO\Documents\Codex\2026-05-21\on-peut-se-cr-er-une\memory_quest\Ludora-release.apk</div>
+        </div>
+      </section>
+
+      <section class="section" id="publication">
+        <div class="panel">
+          <h2>Telechargement public APK</h2>
+          <p>
+            Quand le site est stable, l'APK peut etre publie via GitHub Releases, Google Drive, Supabase Storage ou un autre lien officiel, puis branche ici.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Questions frequentes</div>
+            <h2>Problemes courants.</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Pourquoi certains modules disent encore "local" ?</summary>
+            <p>
+              Ludora garde les actions en local quand Supabase n'a pas encore la table ou la policy necessaire. Relance <code>docs/supabase_ludora_schema.sql</code>, puis appuie sur "Reessayer" dans le compte utilisateur.
+            </p>
+          </details>
+          <details>
+            <summary>L'inscription email ne marche pas, que verifier ?</summary>
+            <p>
+              Verifie que le provider Email est actif dans Supabase Auth. Ludora convertit maintenant le compte anonyme en compte email. Si la confirmation email est active, il faut valider le lien recu par mail.
+            </p>
+          </details>
+          <details>
+            <summary>Le classement mondial ne s'actualise pas.</summary>
+            <p>
+              Joue une partie, termine-la, puis verifie que les tables <code>ludora_scores</code> et <code>ludora_leaderboard</code> existent dans Supabase. Si tu etais hors ligne, le score partira a la reconnexion.
+            </p>
+          </details>
+          <details>
+            <summary>Peut-on publier ce site gratuitement ?</summary>
+            <p>
+              Oui. Le dossier <code>site</code> est statique. Il peut partir sur GitHub Pages, Netlify ou Vercel. Pour une app rentable, on pourra ensuite passer le blog sur Astro ou Next.js.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="index.html"><img src="assets/ludora-icon.png" alt="" /><span>Ludora</span></a>
+          <p>Support technique et installation Ludora.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="blog.html">Blog</a>
+          <a href="legal.html">Legal</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/ludora-site.js"></script>
+  </body>
+</html>
